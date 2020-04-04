@@ -1,4 +1,5 @@
-import stocks.*
+import stocks.*;
+import java.util.*;
 
 class Stocks {
   List<Stock> stocks = new LinkedList<>();
@@ -9,14 +10,7 @@ class Stocks {
         stocks.add(spy);
     }
 
-    private List<Stock> getTop5() {
-      List<Stock> sortedStocks = sort(stocks);
-    }
-
     public static void main(String[] args) {
-      for(5 minutes) {
-        init();
-        execute();
-      }
+        System.out.println("Hello");
     }
 }
