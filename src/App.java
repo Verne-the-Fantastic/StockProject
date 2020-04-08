@@ -27,12 +27,16 @@ class App {
         Thread.sleep(sleepTimeSeconds * 1000);
     }
 
+    private static void timestamp() {
+        SimpleDateFormat formatter = new SimpleDateFormat("\ndd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        System.out.println(formatter.format(date));
+    }
+
     public static void main(String[] args) throws IOException, InterruptedException {
         init();
         while(true) {
-            SimpleDateFormat formatter = new SimpleDateFormat("\ndd/MM/yyyy HH:mm:ss");
-            Date date = new Date();
-            System.out.println(formatter.format(date));
+            timestamp();
             refresh(5);
         }
     }
