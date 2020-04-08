@@ -3,5 +3,5 @@ clean:
 
 run:
 	make clean
-	javac Stocks.java
-	java Stocks
+	javac src.App.java
+	java src.App
